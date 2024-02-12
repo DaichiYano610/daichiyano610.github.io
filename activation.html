@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<title>活性化関数</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            <h1>活性化関数</h1>
+            <ul>
+                <li><a href="index.html">トップページ</a></li>
+                <li><a href="#sigmoid">シグモイド関数</a></li>
+                <li><a href="#relu">ReLU関数</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div id = "sigmoid" class = "spot"></div>
+
+    <section class = "section">
+        <h2>&lt;シグモイド関数(sigmoid function)&gt; </h2> 
+
+        <div>
+            <p>　ニューラルネットワークでよく用いられる活性化関数のひとつはシグモイド関数です。シグモイド関数は以下の式で与えられます。</p>
+            <img src="Mathsigmoid.png" class="image2"　alt="シグモイド関数の式" />
+            <p>シグモイド関数のグラフは以下の通りです。</p>
+            <img src="sigmoid_graph.png" class="image1"　alt="シグモイド関数のグラフ" />
+            <p>シグモイド関数は滑らかな曲線であり，入力に対して連続的に出力が変化します。入力が小さいときに出力は0に近く，入力が大きくなるに従い出力が1に近づくという構造をしています。そして，どんなに入力信号の値が小さくても，またどんなに入力信号の値が大きくても，出力信号の値を0から1の間に押し込めることができます。この関数は非線形関数であり，ニューラルネットワークの層を深くするために重要になります。</p>
+        </div>
+            
+    </section>
+
+    <div id = "relu" class = "spot"></div>
+
+    <section class = "section">
+        <h2>&lt;ReLU関数(Rectified Linear Unit)&gt; </h2> 
+
+        <div>
+            <p>　ニューラルネットワークで用いられる関数のひとつとしてReLU関数があります。ランプ関数とも呼ばれます。ReLU関数は以下の式で与えられます。</p>
+            <img src="Mathrelu.png" class="image3"　alt="ReLU関数の式" />
+            <p>ReLU関数のグラフは以下の通りです。</p>
+            <img src="relu_graph.png" class="image1"　alt="ReLU関数のグラフ" />
+            <p>ReLU関数は，入力が0を超えていれば，その入力をそのまま出力し，0以下ならば0を出力する関数です。導関数の最大値が1と大きく，シグモイド関数といった導関数の最大値が小さい活性化関数と比較して勾配消失問題を抑制します。また，計算が単純であるために計算コストが小さいといった利点もあります。</p>
+        </div>
+            
+    </section>
+
+    <div class = "spot"></div>
+
+    <footer></footer>
+
+</body>
+</html>

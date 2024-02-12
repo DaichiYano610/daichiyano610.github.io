@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<title>CNN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            <h1>畳み込みニューラルネットワーク</h1>
+            <ul>
+                <li><a href="index.html">トップページ</a></li>
+                <li><a href="#cnn">CNN</a></li>
+                <li><a href="#convolution">畳み込み層</a></li>
+                <li><a href="#pooling">プーリング層</a></li>
+                <li><a href="#connect">全結合層</a></li>
+
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div id = "cnn" class = "spot"></div>
+
+    <section class = "section">
+        <h2>&lt;畳み込みニューラルネットワーク(CNN)&gt; </h2> 
+
+        <div>
+            <p>　CNN（Convolutional Neural Network：畳み込みニューラルネットワーク）は、畳み込み層とプーリング層をもつニューラルネットワークです。ニューラルネットワークとは、脳の神経回路を模した数理モデルであり、入力値に対して出力を返します。CNNはニューラルネットワークの中でも古典的なフィルタリング処理に着想を得ており、画像から特徴量を抽出するために効果的なモデルです。畳み込むためのフィルタをカーネルと呼びます。</p>
+            <p>CNNは，主に以下の3つで構成されています。</p>
+            <ol> 
+                <li>畳み込み層</li>
+                <li>プーリング層</li>
+                <li>全結合層</li>
+            </ol>
+        </div>
+            
+    </section>
+
+    <div id = "convolution" class = "spot"></div>
+
+    <section class = "section">
+        <h2>&lt;畳み込み層&gt; </h2> 
+
+        <div>
+           <p>　畳み込み層とは、画像上に小領域（フィルタ）を設け、1つの特徴量として圧縮（=畳み込み）する工程を画像上をスライドしながら繰り返すことによりできた層のことを指します。このフィルタをReLU等の活性化関数で繋ぐことで、CNNが構築されます。畳み込み層があることで、点ではなく領域ごとに特徴抽出をすることができ、通常のニューラルネットワークよりも精度の高い判定ができます。</p>
+        </div>
+            
+    </section>
+
+    <div id = "pooling" class = "spot"></div>
+
+    <section class = "section">
+        <h2>&lt;プーリング層&gt; </h2> 
+
+        <div>
+           <p>　プーリング層とは、画像上に小領域（フィルタ）を設け、その枠内のデータに演算を行うことによりできた層のことを指します。CNNでは主に、枠内に存在する数値のうち、最も高い数値を特徴量として演算するMAXプーリングや、平均値を採用する平均値プーリングを行います。</p>
+        </div>
+            
+    </section>
+
+    <div id = "connect" class = "spot"></div>
+
+    <section class = "section">
+        <h2>&lt;全結合層&gt; </h2> 
+
+        <div>
+           <p>　全結合層は、畳み込み演算やプーリング演算で抽出した特徴量を受け取って、特徴量で分類を行うために利用されます。また，全結合層の最後にSoftmax層を追加することにより、クラスごとの出力値の合計を1にできるため、出力結果を確率とみなして得ることができるようになります。</p>
+        </div>
+            
+    </section>
+
+    <div class = "spot"></div>
+
+    <footer></footer>
+
+</body>
+</html>

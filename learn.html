@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<title>学習</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            <h1>学習</h1>
+            <ul>
+                <li><a href="index.html">トップページ</a></li>
+                <li><a href="#learn">学習とは</a></li>
+                <li><a href="#lossfunc">損失関数</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div id = "learn" class = "spot"></div>
+
+    <section class = "section">
+        <h2>&lt;学習とは&gt; </h2> 
+
+        <div>
+            <p>　機械学習では，訓練データとテストデータの2つのデータに分けて，学習や実験を行うのが一般的です。この場合，まずは訓練データだけを使って学習を行い最適なパラメータを探索します。そして，テストデータを使って，その訓練したモデルの実力を評価します。訓練データとテストデータを分ける理由はモデルに汎用的な能力を持たせるためです。この汎化能力を正しく評価したいために，訓練データとテストデータを分離する必要があります。なお，訓練データは教師データと呼ぶ場合もあります。汎化能力とは，まだ見ぬデータ(訓練データに含まれないデータ)に対しての能力であり，この汎化能力を獲得することこそが機械学習の最終的な目標です。ちなみに，特定のデータだけに対応した状態を過学習(overfitting)と言います。過学習を避けることは，機械学習の重要な課題でもあります。</p>
+        </div>
+            
+    </section>
+
+    <div id = "lossfunc" class = "spot"></div>
+
+    <section class = "section">
+        <h2>&lt;損失関数(loss function)&gt; </h2> 
+
+        <div>
+            <p>　ニューラルネットワークの学習では，ある「ひとつの指標」によって現在の状態を表します。そして，その指標を基準として，最適な重みパラメータの探索を行うのです。ニューラルネットワークの学習で用いられる指標は「損失関数」と呼ばれます。損失関数として用いられる関数はいくつかありますが，最も有名なものは「2乗和誤差(mean squared error)」です。この2乗和誤差は以下の数式によって与えられます。</p>
+            <img src="Mathmse.png" class="image4"　alt="損失関数の式" />
+
+        </div>
+            
+    </section>
+
+    <div class = "spot"></div>
+
+    <footer></footer>
+    
+
+</body>
+</html>
