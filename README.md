@@ -1,3 +1,3 @@
-個人用メモサイト/n
-URL/n
+個人用メモサイト
+URL：
 https://daichiyano610.github.io/
