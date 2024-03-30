@@ -1,0 +1,27 @@
+html{
+    background-color: rgba(215, 250, 239, 0.976);
+}
+
+body{
+    margin: 2%;
+    padding: 5%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.mokuji{
+    border: 1px;
+    border-style: dashed;
+    border-radius: 5px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
