@@ -16,22 +16,57 @@
         <ol style="margin-top: 0px;">
             <li><a href = "#Ml">機械学習</a></li>
             <li><a href = "#supervised">教師あり学習</a></li>
-            <li><a href = "#">教師なし学習</a></li>
+            <li><a href = "#unsupervised">教師なし学習</a></li>
         </ol>
     </div>
 
     <div id = "ML">
         <h2>機械学習</h2><hr>
-        <p>機械学習(machin learning)は、何かしらの目的を達成するための知識や行動を，データを読み込ませることで機械に獲得させる技術です。
+        <p>　機械学習(machin learning)は、何かしらの目的を達成するための知識や行動を，データを読み込ませることで機械に獲得させる技術です。
             機械学習は大きく，<strong>教師あり学習</strong>(supervised learning)、<strong>教師なし学習</strong>(unsupervised learning)、<strong>強化学習</strong>(reinforcement learning)に分けられます。
-            この分け方以外の場合もあります。
+            この分け方以外の場合もあります。<br>
+            　機械に読み込ませて知識や行動を獲得させるために使うデータのことを訓練データと言います。
+            教師あり学習と教師なし学習の違いは，訓練データに，<strong>目的変数</strong>や<strong>説明変数</strong>があるかどうかです。
+            端的に言うと，正解のデータがあって，それを与えるのが教師あり学習，そうでないのが教師なし学習です。
+            <br><br>
         </p>
     </div>
 
     <div id = "supervised">
         <h2>教師あり学習</h2><hr>
-        <p>
+        <p>　教師あり学習は，訓練データを与えて，そこに含まれるある変数を予測するためのモデルを構築する手法です。
+            訓練データの中で予測したい変数のことを<strong>目的変数</strong>(他には正解データ，応答変数，ターゲット変数，従属変数などとも呼ばれます)，
+            目的変数を説明するための変数のことを<strong>説明変数</strong>と言います(他には特徴量，予測変数，独立変数などとも呼ばれます)。
+            <br><br>
+            　y=f(x)という関数があるとすると，yが目的変数，xが説明変数，関数f(x)がモデルです。
+            たとえば，ある消費財ブランドの購買者が，将来ブランド非購買になるか否か(目的変数)を予測したいときは，過去のさまざまなデータ
+            (顧客属性，購買頻度，関連ブランドの購買有無など)を説明変数として扱います。
         </p>
+        <br>
+        <h3 style="margin: 0px;">教師あり学習の手法</h3>
+        <p style="margin-top: 0px;">　教師あり学習は目的変数のデータ形式にいよって，2つの種類に分類できます。目的変数が株価など数値を取る場合を<strong>回帰</strong>(regression)，
+            「男性・女性」「幼児・小学生・学生・大人」などのカテゴリになる場合を<strong>分類</strong>(classification)といいます。
+            たとえば，先ほどのブランド非購買になるか否かのケースは，「購入する」か「購入しないか」の2つのカテゴリに分ける分類タスクです。
+        </p>
+        <p>教師あり学習のアルゴリズム(手法)には，
+            <ul>
+                <strong>
+                <li>重回帰(multiple linear regression)</li>
+                <li>ロジスティック回帰(logistic regression)</li>
+                <li>k近傍法(k-Nearest Neighbors)</li>
+                <li>決定木(Decision Tree)</li>
+                <li>サポートベクタマシン(Support Vector Machine)</li>
+                <li>ランダムフォレスト(Random Forest)</li>
+                <li>勾配ブースティング(Gradient Boosting)</li>
+                </strong>
+            </ul>
+            これらの手法は，回帰で使われるときもあれば，分類で使われるときもあるので，注意しましょう。
+        </p><br>
+    </div>
+
+    <div id = "unsupervised">
+        <h2>教師なし学習</h2><hr>
+        <p>　教師なし学習は目的変数がなく入力データそのものに注目した学習で，データに潜むパターンや示唆を見出そうとするものです。</p>
     </div>
 
 </body>
