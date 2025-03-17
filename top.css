@@ -1,8 +1,35 @@
-a{
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #3eaa915a;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  ol {
+    background: #dde1e7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  li {
+    margin: 10px 0;
+    list-style-type: none;
+  }
+  
+  a {
     text-decoration: none;
-    color: blue;
-}
-
-a:hover{
-    text-decoration: underline;
-}
+    color: #005f73;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #0a9396;
+  }
+  
